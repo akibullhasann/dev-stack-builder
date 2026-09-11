@@ -1,0 +1,154 @@
+
+[
+  {
+    "id": "react",
+    "name": "React",
+    "category": "Frontend",
+    "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
+    "icon": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Popular"
+  },
+  {
+    "id": "nextjs",
+    "name": "Next.js",
+    "category": "Frontend",
+    "description": "A React framework for building fast, scalable, and production-ready web applications.",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXNtZbUVF-oH21VLmbGNa_QMfgswZr-qrKgAmZRSZJWA&s=10",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Powerful"
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js",
+    "category": "Backend",
+    "description": "A JavaScript runtime that allows developers to build fast and scalable server-side applications.",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_maIK1J-S5jAC3FXCdj3xzXl18q0cTUxE4xeFZUUHbA&s",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Fast"
+  },
+  {
+    "id": "express",
+    "name": "Express.js",
+    "category": "Backend",
+    "description": "A lightweight and flexible Node.js framework for building APIs and web servers.",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0fmHBacayeW6xGuOBLBhKMsoGzJsc2DclpngLSE9HkA&s=10",
+    "rating": 4.7,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Essential"
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "category": "Database",
+    "description": "A flexible NoSQL database that stores data in document-based structures.",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZh6M-OpzKtO1Zn_Cf19f9k3ktZBulA0DN_ip0viTvBA&s=10",
+    "rating": 4.7,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Popular"
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "category": "Database",
+    "description": "A powerful open-source relational database known for reliability and advanced SQL features.",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM6GOOPbMaj_Q9Ug-RAacWtlBsAiLne6URqXXDkt5zGA&s=10",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Top SQL"
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "category": "Language",
+    "description": "A versatile programming language used to create interactive and dynamic web applications.",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhf8Lxi6jJytY3P_9_1ZcR3PjVKv4rB6aQ5W87wob2kw&s=10",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Essential"
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "category": "Language",
+    "description": "A strongly typed programming language built on JavaScript for developing reliable applications.",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsQ9r_hVf7P9exhRN4zUX51AwVMHU9qXznfp_RbLRuNQ&s=10",
+    "rating": 4.9,
+    "difficulty": "Intermediate",
+    "badge": "Type Safe"
+  },
+  {
+    "id": "python",
+    "name": "Python",
+    "category": "Language",
+    "description": "A beginner-friendly programming language widely used in web development, automation, data science, and AI.",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvygkXP-NDi1MJ-wTvQVnJokpXQgwPFmZ4yJsz3tq_sA&s=10",
+    "rating": 4.8,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Popular"
+  },
+  {
+    "id": "tailwindcss",
+    "name": "Tailwind CSS",
+    "category": "Styling",
+    "description": "A utility-first CSS framework for rapidly building modern and responsive user interfaces.",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHpcX7zgtVKNJuqIdCCLPzzlqJ_j1ZqfuQdJbsNEfGYw&s=10",
+    "rating": 4.8,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Modern"
+  },
+  {
+    "id": "sass",
+    "name": "Sass",
+    "category": "Styling",
+    "description": "A CSS preprocessor that adds powerful features such as variables, nesting, and reusable styles.",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP6TxQcaf3NKhbzYQ1iD1sfRdt6-wesZYogQ8G8Zl1QQ&s=10",
+    "rating": 4.6,
+    "difficulty": "Intermediate",
+    "badge": "CSS Power"
+  },
+  {
+    "id": "docker",
+    "name": "Docker",
+    "category": "DevOps",
+    "description": "A platform for packaging applications and their dependencies into portable containers.",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmFzwmCoZlk9Cu4815chB_sGDsBXR8ZuTB74hc7XLPAA&s=10",
+    "rating": 4.8,
+    "difficulty": "Intermediate",
+    "badge": "Containers"
+  },
+  {
+    "id": "github-actions",
+    "name": "GitHub Actions",
+    "category": "DevOps",
+    "description": "A CI/CD platform that automates software development workflows directly from GitHub.",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRybwgZAq3YvF3FaH0Q7CndB6GhmwNdRMU49iE1E5nMeQ&s=10",
+    "rating": 4.7,
+    "difficulty": "Intermediate",
+    "badge": "Automation"
+  },
+  {
+    "id": "git",
+    "name": "Git",
+    "category": "Tools",
+    "description": "A distributed version control system used to track changes and collaborate on software projects.",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFXOj3HVxcFfJBRZJnzT5xqVJB59HkLjU07a01T-X9Jw&s=10",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Essential"
+  },
+  {
+    "id": "vscode",
+    "name": "VS Code",
+    "category": "Tools",
+    "description": "A powerful and extensible code editor widely used for modern software development.",
+    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQno7iPwX03-Vmp5kDCCh_1ZWp46RF1xt6mOoUh2tl4PA&s=10",
+    "rating": 4.9,
+    "difficulty": "Beginner-Friendly",
+    "badge": "Developer"
+  }
+]
+
