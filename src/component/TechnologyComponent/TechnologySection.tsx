@@ -13,6 +13,7 @@ const dataFetch = async ():Promise<IdataType[]> =>{
 const TechnologySection = () => {
     const dataPromise = dataFetch();
     const [selectedTech, setSelectedTech] = useState<IdataType[]>([]);
+    const [isSelected, setIsSelected] = useState<string[]>([]);
     
 
 
@@ -26,11 +27,11 @@ const TechnologySection = () => {
                 <div className="md:col-span-4">
                     <Suspense fallback={<h1>Data Loading........</h1>}>
                         <TechnologiesGrid dataPromise={dataPromise} selectedTech={selectedTech}
-                        setSelectedTech={setSelectedTech}></TechnologiesGrid>
+                        setSelectedTech={setSelectedTech} isSelected={isSelected} setIsSelected={setIsSelected}></TechnologiesGrid>
                     </Suspense>
                 </div>
                 <div className="md:col-span-1">
-                    <Stack selectedTech={selectedTech}></Stack>
+                    <Stack selectedTech={selectedTech} setSelectedTech={setSelectedTech} isSelected={isSelected} setIsSelected={setIsSelected}></Stack>
                 </div>
             </div>
         </div>

@@ -7,12 +7,18 @@ import { toast } from 'react-toastify';
 interface ItechnologyCard {
     techData: IdataType,
     selectedTech: IdataType[],
-    setSelectedTech: Dispatch<SetStateAction<IdataType[]>>
+    setSelectedTech: Dispatch<SetStateAction<IdataType[]>>,
+    isSelected:string[],
+    setIsSelected: Dispatch<SetStateAction<string[]>>
 }
-const TechnologyCard = ({techData, selectedTech, setSelectedTech}:ItechnologyCard) => {
+const TechnologyCard = ({techData, selectedTech, setSelectedTech,isSelected, setIsSelected}:ItechnologyCard) => {
+
+    const selected = isSelected.includes(techData.id)
 
     const handleTechData =(data:IdataType)=>{
 
+        const checkingData = [...isSelected, data.id];
+        setIsSelected(checkingData);
         const newData = [...selectedTech, data];
         setSelectedTech(newData);
         toast.success(`${data.name} is added in your stack`);
@@ -36,9 +42,12 @@ const TechnologyCard = ({techData, selectedTech, setSelectedTech}:ItechnologyCar
                 <p className='text-sm'>{techData.difficulty}</p>
                 <p className='text-sm'>{techData.rating}</p>
             </div>
-            <button 
+            <button
+            disabled={selected} 
             onClick={()=>{handleTechData(techData)}}
-            className='border btn-gradient'>Add to Stack</button>
+            className='border btn-gradient'>
+                {selected?'Added':'Add to Stack'}
+            </button>
         </div>
     );
 };
