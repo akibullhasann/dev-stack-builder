@@ -1,6 +1,8 @@
 
 import type { Dispatch, SetStateAction } from 'react';
 import type { IdataType } from '../../Type';
+import { toast } from 'react-toastify';
+
 
 interface ItechnologyCard {
     techData: IdataType,
@@ -12,13 +14,14 @@ const TechnologyCard = ({techData, selectedTech, setSelectedTech}:ItechnologyCar
     const handleTechData =(data:IdataType)=>{
 
         const newData = [...selectedTech, data];
-        setSelectedTech(newData)
+        setSelectedTech(newData);
+        toast.success(`${data.name} is added in your stack`);
     }
 
 
 
     return (
-        <div className='flex flex-col justify-between gap-6 border border-gray-300 shadow-gray-900 px-4 py-3 rounded-lg mt-5' >
+        <div className='flex flex-col justify-between gap-6 border border-gray-300 shadow-gray-900 px-4 py-3 rounded-lg mb-5' >
             <div className='flex justify-between'>
                 <div className='flex items-center gap-3'>
                     <img className='w-10 h-auto rounded-full ' src={techData.icon} alt="" />
