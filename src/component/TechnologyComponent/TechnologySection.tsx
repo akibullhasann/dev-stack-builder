@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import type { IdataType } from "../../Type";
 import TechnologiesGrid from "./TechnologiesGrid";
 import Stack from "./Stack";
@@ -9,8 +9,15 @@ const dataFetch = async ():Promise<IdataType[]> =>{
     return responsData;
 }
 
+
 const TechnologySection = () => {
     const dataPromise = dataFetch();
+    const [selectedTech, setSelectedTech] = useState<IdataType[]>([]);
+    
+
+
+
+
     return (
         <div className="mx-auto  container p-5 ">
             <h2 className="text-center text-3xl text-nowrap font-bold ">Explore the <span className="gradient-text">Technologies</span></h2>
@@ -18,11 +25,12 @@ const TechnologySection = () => {
             <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
                 <div className="md:col-span-4">
                     <Suspense fallback={<h1>Data Loading........</h1>}>
-                        <TechnologiesGrid dataPromise={dataPromise}></TechnologiesGrid>
+                        <TechnologiesGrid dataPromise={dataPromise} selectedTech={selectedTech}
+                        setSelectedTech={setSelectedTech}></TechnologiesGrid>
                     </Suspense>
                 </div>
                 <div className="md:col-span-1">
-                    <Stack></Stack>
+                    <Stack selectedTech={selectedTech}></Stack>
                 </div>
             </div>
         </div>

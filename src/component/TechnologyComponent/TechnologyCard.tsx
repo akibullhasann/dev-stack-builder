@@ -1,10 +1,22 @@
 
+import type { Dispatch, SetStateAction } from 'react';
 import type { IdataType } from '../../Type';
 
 interface ItechnologyCard {
-    techData: IdataType
+    techData: IdataType,
+    selectedTech: IdataType[],
+    setSelectedTech: Dispatch<SetStateAction<IdataType[]>>
 }
-const TechnologyCard = ({techData}:ItechnologyCard) => {
+const TechnologyCard = ({techData, selectedTech, setSelectedTech}:ItechnologyCard) => {
+
+    const handleTechData =(data:IdataType)=>{
+
+        const newData = [...selectedTech, data];
+        setSelectedTech(newData)
+    }
+
+
+
     return (
         <div className='flex flex-col justify-between gap-6 border border-gray-300 shadow-gray-900 px-4 py-3 rounded-lg mt-5' >
             <div className='flex justify-between'>
@@ -21,7 +33,9 @@ const TechnologyCard = ({techData}:ItechnologyCard) => {
                 <p className='text-sm'>{techData.difficulty}</p>
                 <p className='text-sm'>{techData.rating}</p>
             </div>
-            <button className='border btn-gradient'>Add to Stack</button>
+            <button 
+            onClick={()=>{handleTechData(techData)}}
+            className='border btn-gradient'>Add to Stack</button>
         </div>
     );
 };
