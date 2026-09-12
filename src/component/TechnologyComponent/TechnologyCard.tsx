@@ -1,0 +1,29 @@
+
+import type { IdataType } from '../../Type';
+
+interface ItechnologyCard {
+    techData: IdataType
+}
+const TechnologyCard = ({techData}:ItechnologyCard) => {
+    return (
+        <div className='flex flex-col justify-between gap-6 border border-gray-300 shadow-gray-900 px-4 py-3 rounded-lg mt-5' >
+            <div className='flex justify-between'>
+                <div className='flex items-center gap-3'>
+                    <img className='w-10 h-auto rounded-full ' src={techData.icon} alt="" />
+                     <h2 className='font-bold text-lg md:hidden'>{techData.name}</h2>
+                </div>
+                <div><p className='border px-3 py-1 rounded-2xl text-center'>{techData.badge}</p></div>
+            </div>
+            <h2 className='hidden md:block font-bold '>{techData.name}</h2>
+            <p>{techData.description}</p>
+            <div className='flex justify-between'>
+                <p className='text-sm border px-2 py-1 rounded-xl border-none bg-gray-200'>{techData.category}</p>
+                <p className='text-sm'>{techData.difficulty}</p>
+                <p className='text-sm'>{techData.rating}</p>
+            </div>
+            <button className='border btn-gradient'>Add to Stack</button>
+        </div>
+    );
+};
+
+export default TechnologyCard;
