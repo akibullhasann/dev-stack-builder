@@ -42,10 +42,10 @@ const TechnologyCard = ({techData, selectedTech, setSelectedTech,isSelected, set
                 <p className='text-sm'>{techData.difficulty}</p>
                 <p className='text-sm'>{techData.rating}</p>
             </div>
-            <button
+            <button 
             disabled={selected} 
             onClick={()=>{handleTechData(techData)}}
-            className='border btn-gradient'>
+            className='border btn-gradient cursor-pointer'>
                 {selected?'Added':'Add to Stack'}
             </button>
         </div>

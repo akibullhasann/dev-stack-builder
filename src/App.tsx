@@ -1,4 +1,5 @@
 
+import Footer from './component/Footer';
 import Hero from './component/Hero'
 import NavBar from './component/NavBar'
 import TechnologySection from './component/TechnologyComponent/TechnologySection'
@@ -13,6 +14,7 @@ function App() {
       <Hero></Hero>
       <TechnologySection></TechnologySection>
       <ToastContainer />
+      <Footer></Footer>
       
     </>
   )

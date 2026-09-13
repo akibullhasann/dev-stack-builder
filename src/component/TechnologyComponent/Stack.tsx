@@ -35,7 +35,7 @@ const Stack = ({ selectedTech, setSelectedTech,isSelected, setIsSelected }: Ista
 
                 {selectedTech.length ? <p> <span className="mr-1">{selectedTech.length}</span>Techonology selected</p> : <p>No technologies selected yet</p>}
 
-                {selectedTech.length === 0 ? <div><h1>Your Stack is Empty</h1></div> : ''}
+                {selectedTech.length === 0 ? <div className="border-dashed border border-gray-400 mt-3"><h1 className="text-xs text-center py-5 text-gray-500 ">Your Stack is Empty</h1></div> : ''}
 
                 {/* <p> <span className="mr-1">{selectedTech.length}</span> Technology Selected</p> */}
                 <div>
